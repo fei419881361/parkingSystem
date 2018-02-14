@@ -14,6 +14,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
+
+/**
+ * 对管理员的增删改查
+ * */
 @WebServlet(name = "adminServlet" ,urlPatterns = "/pages/back/AdminServlet/*")
 public class AdminServlet extends HttpServlet {
     @Override
