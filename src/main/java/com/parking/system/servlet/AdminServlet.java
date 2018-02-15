@@ -43,12 +43,12 @@ public class AdminServlet extends HttpServlet {
     public String login(HttpServletRequest request){
         String msg = ""; //表示提示信息
         String url = ""; // 表示跳转路径
-        String account = request.getParameter("account");
-        String pwd = request.getParameter("pwd");
+        String account = request.getParameter("userName");
+        String pwd = request.getParameter("passWord");
         if(ValidateUtils.validateEmpty(account) && ValidateUtils.validateEmpty(pwd)){ //表示数据存在
             Admin vo = new Admin();
-            vo.setAccount(account);
-            vo.setPwd(new MD5Code().getMD5ofStr(pwd + account)); //加盐处理
+            vo.setUserName(account);
+            vo.setPassword(new MD5Code().getMD5ofStr(pwd + account)); //加盐处理
             try {
                 if(ServiceFactory.getIAdminServiceInstence().login(vo).equals(ResponseInfo.LOGIN_SUCCESS)){
                     request.getSession().setAttribute("account", account); // 保存aid

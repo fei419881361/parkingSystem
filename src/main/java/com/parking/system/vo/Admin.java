@@ -4,28 +4,63 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Admin implements Serializable {
-    private Integer id;
-    private String account;
-    private String pwd;
-    private String name;
-    private Integer sex;
-    private Date work_time;
-    private String phone;
-    private Integer level;
-    private Integer age;
+   private Integer id;
+   private String name;
+   private Integer age;
+   private Integer sex;
+   private Date work_time;
+   private String userName;
+   private String password;
+   private String phoneNumber;
+   private Integer level;
+   private Date creatTime;
+   private Date updateTime;
 
     public Admin() {
     }
 
-    public Admin(String account, String pwd, String name, Integer sex, Date work_time, String phone, Integer level, Integer age) {
-        this.account = account;
-        this.pwd = pwd;
+    public Admin(String name, Integer age, Integer sex, Date work_time, String userName, String password, String phoneNumber, Integer level, Date creatTime, Date updateTime) {
         this.name = name;
+        this.age = age;
         this.sex = sex;
         this.work_time = work_time;
-        this.phone = phone;
+        this.userName = userName;
+        this.password = password;
+        this.phoneNumber = phoneNumber;
         this.level = level;
+        this.creatTime = creatTime;
+        this.updateTime = updateTime;
+    }
+
+    public Admin(Integer id, String name, Integer age, Integer sex, Date work_time, String userName, String password, String phoneNumber, Integer level, Date creatTime, Date updateTime) {
+        this.id = id;
+        this.name = name;
         this.age = age;
+        this.sex = sex;
+        this.work_time = work_time;
+        this.userName = userName;
+        this.password = password;
+        this.phoneNumber = phoneNumber;
+        this.level = level;
+        this.creatTime = creatTime;
+        this.updateTime = updateTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                ", work_time=" + work_time +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", level=" + level +
+                ", creatTime=" + creatTime +
+                ", updateTime=" + updateTime +
+                '}';
     }
 
     public Integer getId() {
@@ -36,28 +71,20 @@ public class Admin implements Serializable {
         this.id = id;
     }
 
-    public String getAccount() {
-        return account;
-    }
-
-    public void setAccount(String account) {
-        this.account = account;
-    }
-
-    public String getPwd() {
-        return pwd;
-    }
-
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
-    }
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public Integer getSex() {
@@ -76,12 +103,28 @@ public class Admin implements Serializable {
         this.work_time = work_time;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public Integer getLevel() {
@@ -92,26 +135,19 @@ public class Admin implements Serializable {
         this.level = level;
     }
 
-    public Integer getAge() {
-        return age;
+    public Date getCreatTime() {
+        return creatTime;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setCreatTime(Date creatTime) {
+        this.creatTime = creatTime;
     }
 
-    @Override
-    public String toString() {
-        return "Admin{" +
-                "id=" + id +
-                ", account='" + account + '\'' +
-                ", pwd='" + pwd + '\'' +
-                ", name='" + name + '\'' +
-                ", sex=" + sex +
-                ", work_time=" + work_time +
-                ", phone='" + phone + '\'' +
-                ", level=" + level +
-                ", age=" + age +
-                '}';
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 }
