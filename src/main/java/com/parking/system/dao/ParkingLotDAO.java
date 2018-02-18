@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ParkingLotDAO extends BaseDAO<Integer,ParkingLot> {
     List<ParkingLot> findAllBySplitAndParkID(Integer parkId,Integer curentPage, Integer lineSize) throws SQLException;
+
+
 }

@@ -9,7 +9,7 @@ import java.sql.SQLException;
  */
 public class DatabaseConnection {
     private static final String DBDriver = "com.mysql.jdbc.Driver";
- private static final String DBURL = "jdbc:mysql://localhost:3306/parksystem?useUnicode=true&characterEncoding=gbk";
+ private static final String DBURL = "jdbc:mysql://localhost:3306/parksystem";
     private static final String DBUSER = "root";
     private static final String DBPASS = "748596";
 

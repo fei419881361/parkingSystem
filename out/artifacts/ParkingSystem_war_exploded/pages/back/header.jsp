@@ -24,15 +24,9 @@
                     <img src="../../assets/img/park.png" class="img-thumbnail" />
 
                     <div class="inner-text">
-                        管理员: <c:if test="${aid != null}">
-                        ${aid}
+                        管理员: <c:if test="${account != null}">
+                        ${account}
                     </c:if>
-                        <br />
-                        <small>上次登录日期:
-                            <c:if test="${lastdate != null}">
-                                ${lastdate}
-                            </c:if>
-                        </small>
                     </div>
                 </div>
             </li>
@@ -58,10 +52,10 @@
                 <a href="./index.jsp"><i class="fa fa-yelp "></i>停车场管理 <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="./item/item_insert.jsp"><i class="fa fa-coffee"></i>增加停车场</a>
+                        <a href="pages/back/depot/DepotServlet/insertPro"><i class="fa fa-coffee"></i>增加停车场</a>
                     </li>
                     <li>
-                        <a href="pages/back/item/ItemServlet/list"><i class="fa fa-flash "></i>停车场列表</a>
+                        <a href="pages/back/depot/DepotServlet/listSplit"><i class="fa fa-flash "></i>停车场列表</a>
                     </li>
                 </ul>
             </li>
@@ -70,10 +64,10 @@
                 <a href="/pages/back/index.jsp"><i class="fa fa-yelp "></i>车辆管理<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="pages/back/books/BooksServlet/insertPro"><i class="fa fa-coffee"></i>增加登记车辆</a>
+                        <a href="pages/back/cars/CarServlet/insertPro"><i class="fa fa-coffee"></i>增加登记车辆</a>
                     </li>
                     <li>
-                        <a href="pages/back/books/BooksServlet/listSplit"><i class="fa fa-flash "></i>登记车辆列表</a>
+                        <a href="pages/back/cars/CarServlet/listSplit"><i class="fa fa-flash "></i>登记车辆列表</a>
                     </li>
                 </ul>
             </li>

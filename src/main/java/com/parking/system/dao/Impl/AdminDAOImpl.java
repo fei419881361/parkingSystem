@@ -59,7 +59,14 @@ public class AdminDAOImpl extends AbstractDAOImpl implements AdminDAO {
     }
 
     public Integer getAllCount(String colum, String keyWord) throws SQLException {
-        return null;
+        String sql = "SELECT COUNT(*) FROM admin WHERE "+colum+" LIKE ?";
+        super.pstmt = super.conn.prepareStatement(sql);
+        super.pstmt.setString(1,"%"+keyWord+"%");
+        ResultSet rs = super.pstmt.executeQuery();
+        if(rs.next()){
+            return rs.getInt(1);
+        }
+        return 0;
     }
 
     public boolean doRemove(Set ids) throws SQLException {

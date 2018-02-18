@@ -31,23 +31,54 @@ public class DepotDAOImpl extends AbstractDAOImpl implements DepotDAO {
     }
 
     public boolean doUpdate(Depot vo) throws SQLException {
-        String sql = "UPDATE depot SET developer=?,postion=?,park_num=?,createTime=?,updateTime=? WHERE id = ?";
+        String sql = "UPDATE depot SET developer=?,postion=?,park_num=?,updateTime=? WHERE id = ?";
         pstmt = super.conn.prepareStatement(sql);
         pstmt.setString(1,vo.getDeveloper());
         pstmt.setString(2,vo.getPosition());
         pstmt.setString(3,vo.getPark_num());
-        pstmt.setDate(4, new Date(vo.getCreateTime().getTime()) );
-        pstmt.setDate(5, new Date(vo.getUpdateTime().getTime()));
-        pstmt.setInt(6,vo.getId());
+        pstmt.setDate(4, new Date(vo.getUpdateTime().getTime()));
+        pstmt.setInt(5,vo.getId());
         return pstmt.executeUpdate()>0? ResponseInfo.SUCCESS:ResponseInfo.FAIL;
     }
 
     public Depot findById(Integer id) throws SQLException {
+        String sql = "SELECT d.id,d.developer,d.postion,d.park_num,d.createTime,d.updateTime FROM depot d WHERE id = ? ";
+        super.pstmt = super.conn.prepareStatement(sql);
+        super.pstmt.setInt(1,id);
+        ResultSet rs = super.pstmt.executeQuery();
+
+        while(rs.next()){
+            Depot depot= new Depot();
+            depot.setId(rs.getInt(1));
+            depot.setDeveloper(rs.getString(2));
+            depot.setPosition(rs.getString(3));
+            depot.setPark_num(rs.getString(4));
+            depot.setCreateTime(rs.getDate(5));
+            depot.setUpdateTime(rs.getDate(6));
+
+            return depot;
+        }
         return null;
     }
 
     public List finaAll() throws SQLException {
-        return null;
+        List<Depot> depots = new ArrayList<Depot>();
+        String sql = "SELECT d.id,d.developer,d.postion,d.park_num,d.createTime,d.updateTime FROM depot d ";
+        super.pstmt = super.conn.prepareStatement(sql);
+        ResultSet rs = super.pstmt.executeQuery();
+
+        while(rs.next()){
+            Depot depot= new Depot();
+            depot.setId(rs.getInt(1));
+            depot.setDeveloper(rs.getString(2));
+            depot.setPosition(rs.getString(3));
+            depot.setPark_num(rs.getString(4));
+            depot.setCreateTime(rs.getDate(5));
+            depot.setUpdateTime(rs.getDate(6));
+
+            depots.add(depot);
+        }
+        return depots;
     }
 
     public List findAllBySplit(String colum, String keyWord, Integer curentPage, Integer lineSize) throws SQLException {
@@ -73,7 +104,13 @@ public class DepotDAOImpl extends AbstractDAOImpl implements DepotDAO {
     }
 
     public Integer getAllCount(String colum, String keyWord) throws SQLException {
-        return null;
+        String sql = "SELECT COUNT(*) FROM depot";
+        super.pstmt = super.conn.prepareStatement(sql);
+        ResultSet rs = super.pstmt.executeQuery();
+        if(rs.next()){
+            return rs.getInt(1);
+        }
+        return 0;
     }
 
     public boolean doRemove(Set ids) throws SQLException {
@@ -88,4 +125,7 @@ public class DepotDAOImpl extends AbstractDAOImpl implements DepotDAO {
         }
         return ResponseInfo.SUCCESS;
     }
+
+
+
 }

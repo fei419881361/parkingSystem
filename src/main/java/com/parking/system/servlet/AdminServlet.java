@@ -53,6 +53,7 @@ public class AdminServlet extends HttpServlet {
                 if(ServiceFactory.getIAdminServiceInstence().login(vo).equals(ResponseInfo.LOGIN_SUCCESS)){
                     request.getSession().setAttribute("account", account); // 保存aid
                     msg = "登录成功！";
+                   // url = "/pages/back/index.jsp";
                     url = "/pages/back/index.jsp";
                 }else {
                     msg = "登录失败，错误的ID或密码!";

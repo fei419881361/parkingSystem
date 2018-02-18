@@ -39,11 +39,11 @@
                     <br />
                     <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-user"  ></i></span>
-                        <input type="text" class="form-control" id="account" name="account" value="admin" placeholder="Your Username " />
+                        <input type="text" class="form-control" id="userName" name="userName" value="admin" placeholder="Your Username " />
                     </div>
                     <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                        <input type="password" class="form-control" id="pwd" name="pwd" value=""  placeholder="Your Password" />
+                        <input type="password" class="form-control" id="passWord" name="passWord" value=""  placeholder="Your Password" />
                     </div>
                     <div class="form-group input-group">
                         <button type="submit" class="btn btn-primary ">管理员登录</button>

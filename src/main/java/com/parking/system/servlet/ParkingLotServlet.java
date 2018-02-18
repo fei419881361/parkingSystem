@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * 车位
  * */
-@WebServlet(name = "parkingLotServlet" ,urlPatterns = "/pages/back/ParkingLotServlet/*")
+@WebServlet(name = "parkingLotServlet" ,urlPatterns = "/pages/back/parkingLot/ParkingLotServlet/*")
 public class ParkingLotServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

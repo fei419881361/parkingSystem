@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "maintainServlet" ,urlPatterns = "/pages/back/MaintainServlet/*")
+@WebServlet(name = "maintainServlet" ,urlPatterns = "/pages/back/maintain/MaintainServlet/*")
 public class MaintainServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

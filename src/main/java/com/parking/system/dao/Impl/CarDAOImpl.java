@@ -33,15 +33,14 @@ public class CarDAOImpl extends AbstractDAOImpl implements CarDAO {
     }
 
     public boolean doUpdate(Car vo) throws SQLException {
-        String sql = "UPDATE car SET park_id=?,car_num=?,owner_name=?,owner_phone=?,createTime=?,updateTime=? WHERE id = ?";
+        String sql = "UPDATE car SET park_id=?,car_num=?,owner_name=?,owner_phone=?,updateTime=? WHERE id = ?";
         pstmt = super.conn.prepareStatement(sql);
         pstmt.setInt(1,vo.getPark_id());
         pstmt.setString(2,vo.getCar_num());
         pstmt.setString(3,vo.getOwner_name());
         pstmt.setString(4,vo.getOwner_phone());
-        pstmt.setDate(5, new Date(vo.getCreateTime().getTime()) );
-        pstmt.setDate(6, new Date(vo.getUpdateTime().getTime()));
-        pstmt.setInt(7,vo.getId());
+        pstmt.setDate(5, new Date(vo.getUpdateTime().getTime()));
+        pstmt.setInt(6,vo.getId());
         return pstmt.executeUpdate()>0? ResponseInfo.SUCCESS:ResponseInfo.FAIL;
     }
 
@@ -91,7 +90,14 @@ public class CarDAOImpl extends AbstractDAOImpl implements CarDAO {
     }
 
     public Integer getAllCount(String colum, String keyWord) throws SQLException {
-        return null;
+        String sql = "SELECT COUNT(*) FROM car WHERE "+colum+" LIKE ?";
+        super.pstmt = super.conn.prepareStatement(sql);
+        super.pstmt.setString(1,"%"+keyWord+"%");
+        ResultSet rs = super.pstmt.executeQuery();
+        if(rs.next()){
+            return rs.getInt(1);
+        }
+        return 0;
     }
 
     public Car findByCarNumAndParkID(Car vo) throws SQLException {

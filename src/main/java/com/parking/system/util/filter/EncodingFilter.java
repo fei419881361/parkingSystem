@@ -13,7 +13,7 @@ public class EncodingFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
+        System.out.println("filter");
     }
 
     @Override
