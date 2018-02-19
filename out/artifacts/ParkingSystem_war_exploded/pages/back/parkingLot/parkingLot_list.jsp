@@ -109,13 +109,12 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <%--<button type="button" class="btn btn-default" data-dismiss="modal" >关闭--%>
-                <%--</button>--%>
+
                 <button type="button" class="btn btn-primary" onclick="updateInfo()">
                     保存
                 </button>
                     <button type="button" class="btn btn-warning" onclick="deleteItem()">
-                        保存
+                        删除
                     </button>
             </div>
         </div><!-- /.modal-content -->

@@ -6,14 +6,14 @@ import com.parking.system.service.DepotService;
 import com.parking.system.service.Impl.AdminServiceImpl;
 import com.parking.system.service.Impl.CarServiceImpl;
 import com.parking.system.service.Impl.DepotServiceImpl;
-<<<<<<< HEAD
+
 import com.parking.system.service.Impl.ParkingLotServiceImpl;
 import com.parking.system.service.ParkingLotService;
 import com.parking.system.vo.ParkingLot;
-=======
+
 import com.parking.system.service.Impl.MaintainServiceImpl;
 import com.parking.system.service.MaintainService;
->>>>>>> e3872de4f618101381291d1e1c59a893fe3596e4
+
 
 public class ServiceFactory {
     /**

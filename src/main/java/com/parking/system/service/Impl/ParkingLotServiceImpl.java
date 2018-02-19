@@ -29,7 +29,7 @@ public class ParkingLotServiceImpl implements ParkingLotService {
 
     @Override
     public boolean Insert(ParkingLot vo) throws SQLException {
-        return false;
+        return DAOFactory.getIParkingLotDAOInstance(this.dbc.getConn()).doCreate(vo);
     }
 
     @Override
@@ -39,6 +39,6 @@ public class ParkingLotServiceImpl implements ParkingLotService {
 
     @Override
     public boolean Delete(Set ids) throws SQLException {
-        return return DAOFactory.getIParkingLotDAOInstance(this.dbc.getConn()).doRemove(ids);
+         return DAOFactory.getIParkingLotDAOInstance(this.dbc.getConn()).doRemove(ids);
     }
 }

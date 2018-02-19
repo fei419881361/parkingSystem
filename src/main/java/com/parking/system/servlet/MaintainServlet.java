@@ -68,10 +68,10 @@ public class MaintainServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        request.setAttribute("url","/pages/back/maintain/MaintainServlet/"+method);
+       // request.setAttribute("url","/pages/back/maintain/MaintainServlet/"+method);
         request.setAttribute("currentPage", currentPage);
         request.setAttribute("lineSize", lineSize);
-        return "pages/back/maintain/maintain_list.jsp";
+        return "/pages/back/maintain/maintain_list.jsp";
     }
 
     private String addMaintain(HttpServletRequest request) {

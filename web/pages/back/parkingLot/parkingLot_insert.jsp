@@ -27,28 +27,41 @@
         <div id="page-inner">
             <div class="col-md-12">
                 <div class="col-md-6 col-md-offset-4">
-                    <h1 class="h1">增加分类操作</h1>
+                    <h1 class="h1">增加车位操作</h1>
                 </div>
                 <div class="col-md-12">
                     <hr>
                 </div>
             </div>
             <%--编写数据增加表单--%>
-                <form action="<%=basePath%>pages/back/item/ItemServlet/insert" method="post" class="form-horizontal" id="insertForm">
+                <form action="<%=basePath%>pages/back/parkingLot/ParkingLotServlet/insert" method="post" class="form-horizontal" id="insertForm">
 
-                    <%--性别--%>
+
                     <div class="form-group">
-                        <label for="name" class="col-md-3 control-label">分类名称</label>
+                        <label for="number" class="col-md-3 control-label">车位编号</label>
                         <div class="col-md-6">
-                            <input type="text" name="name" id="name" class="form-control">
+                            <input type="text" name="number" id="number" class="form-control" onkeypress="return event.keyCode>=48&&event.keyCode<=57" ng-pattern="/[^a-zA-Z]/">
                         </div>
                     </div>
 
-                    <!--内容简介-->
+                    <c:if test="${allPark_ids != null}">
+
+                        <div class="form-group">
+                            <label for="park_id" class="col-md-3 control-label">停车场ID</label>
+                            <div class="col-md-6">
+                                <select class="form-control"id="park_id" name="park_id">
+                                    <c:forEach items="${allPark_ids}" var="depot">
+                                        <option value="${depot.id}">${depot.id}</option>
+                                    </c:forEach>
+                                </select>
+                            </div>
+                        </div>
+                    </c:if>
+
                     <div class="form-group">
-                        <label for="note" class="col-md-3 control-label">内容简介</label>
+                        <label for="postion" class="col-md-3 control-label">车位位置</label>
                         <div class="col-md-6">
-                            <textarea name="note" id="note" class="form-control"></textarea>
+                            <textarea name="postion" id="postion" class="form-control"></textarea>
                         </div>
                     </div>
 

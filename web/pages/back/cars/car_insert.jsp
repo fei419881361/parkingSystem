@@ -44,7 +44,7 @@
                     </div>
 
                         <c:if test="${allPark_ids != null}">
-                            <%--aid--%>
+
                             <div class="form-group">
                                 <label for="park_id" class="col-md-3 control-label">停车场ID</label>
                                 <div class="col-md-6">

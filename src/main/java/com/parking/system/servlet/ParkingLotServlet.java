@@ -2,6 +2,7 @@ package com.parking.system.servlet;
 
 
 import com.parking.system.factory.ServiceFactory;
+import com.parking.system.util.Validate.ValidateUtils;
 import com.parking.system.vo.Depot;
 import com.parking.system.vo.ParkingLot;
 
@@ -46,7 +47,7 @@ public class ParkingLotServlet extends HttpServlet {
         req.getRequestDispatcher(path).forward(req,resp);
     }
 
-<<<<<<< HEAD
+
     private String delete(HttpServletRequest req) {
         Integer id = Integer.valueOf(req.getParameter("id"));
         System.out.println(id);
@@ -85,11 +86,52 @@ public class ParkingLotServlet extends HttpServlet {
     }
 
     private String insertPro(HttpServletRequest req) {
-        return null;
+        List<Depot> depots = null;
+        try {
+            depots = ServiceFactory.getIDepotServiceInstence().findAll();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        req.setAttribute("allPark_ids", depots);
+        return "/pages/back/parkingLot/parkingLot_insert.jsp";
     }
 
     private String insert(HttpServletRequest req) {
-        return null;
+        String msg = "";
+        String url = "";
+        //取得页面中的数据
+        String park_id = req.getParameter("park_id");
+        String number = req.getParameter("number");
+        String postion = req.getParameter("postion");
+
+        if (ValidateUtils.validateEmpty(park_id) && ValidateUtils.validateEmpty(number) &&
+                ValidateUtils.validateEmpty(postion)) {
+            ParkingLot vo = new ParkingLot();
+            vo.setPark_id(Integer.valueOf(park_id));
+            vo.setNumber(Integer.valueOf(number));
+            vo.setPosition(postion);
+            vo.setCreateTime(new Date());
+            vo.setUpdateTime(new Date());
+
+            try {
+                if (ServiceFactory.getIParkingLotServiceInstence().Insert(vo)) {
+                    msg = "数据增加成功";
+                    url = "/pages/back/cars/CarServlet/insertPro";
+                } else {
+                    msg = "输入信息有误";
+                    url = "/pages/back/cars/CarServlet/insertPro";
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            msg = "输入不能为空";
+            url = "/pages/back/cars/CarServlet/insertPro";
+        }
+        req.setAttribute("msg", msg);
+        req.setAttribute("url", url);
+
+        return "/pages/forward.jsp";
     }
 
     private String listSplit(HttpServletRequest req, String method) {
@@ -133,7 +175,5 @@ public class ParkingLotServlet extends HttpServlet {
 
         return "/pages/back/parkingLot/parkingLot_list.jsp";
     }
-=======
 
->>>>>>> e3872de4f618101381291d1e1c59a893fe3596e4
 }
