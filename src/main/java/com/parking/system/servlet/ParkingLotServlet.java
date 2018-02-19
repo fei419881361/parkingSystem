@@ -46,6 +46,7 @@ public class ParkingLotServlet extends HttpServlet {
         req.getRequestDispatcher(path).forward(req,resp);
     }
 
+<<<<<<< HEAD
     private String delete(HttpServletRequest req) {
         Integer id = Integer.valueOf(req.getParameter("id"));
         System.out.println(id);
@@ -132,4 +133,7 @@ public class ParkingLotServlet extends HttpServlet {
 
         return "/pages/back/parkingLot/parkingLot_list.jsp";
     }
+=======
+
+>>>>>>> e3872de4f618101381291d1e1c59a893fe3596e4
 }

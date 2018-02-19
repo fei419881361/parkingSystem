@@ -1,5 +1,6 @@
 package com.parking.system.vo;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -9,14 +10,14 @@ public class Maintain {
     private Integer id;
     private Double cost;
     private Integer type;
-    private Date maintain_time;
+    private String maintain_time;
     private Date createTime;
     private Date updateTime;
 
     public Maintain() {
     }
 
-    public Maintain(Integer id, Double cost, Integer type, Date maintain_time, Date createTime, Date updateTime) {
+    public Maintain(Integer id, Double cost, Integer type, String maintain_time, Date createTime, Date updateTime) {
         this.id = id;
         this.cost = cost;
         this.type = type;
@@ -25,12 +26,11 @@ public class Maintain {
         this.updateTime = updateTime;
     }
 
-    public Maintain(Double cost, Integer type, Date maintain_time, Date createTime, Date updateTime) {
+    public Maintain(Double cost, Integer type, String maintain_time, Date createTime) {
         this.cost = cost;
         this.type = type;
         this.maintain_time = maintain_time;
         this.createTime = createTime;
-        this.updateTime = updateTime;
     }
 
     public Integer getId() {
@@ -57,11 +57,11 @@ public class Maintain {
         this.type = type;
     }
 
-    public Date getMaintain_time() {
+    public String getMaintain_time() {
         return maintain_time;
     }
 
-    public void setMaintain_time(Date maintain_time) {
+    public void setMaintain_time(String maintain_time) {
         this.maintain_time = maintain_time;
     }
 

@@ -40,7 +40,7 @@ public class AdminServlet extends HttpServlet {
         req.getRequestDispatcher(path).forward(req,resp);
     }
 
-    public String login(HttpServletRequest request){
+    private String login(HttpServletRequest request){
         String msg = ""; //表示提示信息
         String url = ""; // 表示跳转路径
         String account = request.getParameter("userName");

@@ -1,18 +1,19 @@
 package com.parking.system.factory;
 
-import com.parking.system.dao.AdminDAO;
-import com.parking.system.dao.CarDAO;
-import com.parking.system.dao.DepotDAO;
-import com.parking.system.dao.Impl.AdminDAOImpl;
-import com.parking.system.dao.Impl.CarDAOImpl;
-import com.parking.system.dao.Impl.DepotDAOImpl;
-import com.parking.system.dao.Impl.ParkingLotDAOImpl;
-import com.parking.system.dao.ParkingLotDAO;
+import com.parking.system.dao.*;
+import com.parking.system.dao.Impl.*;
 import com.parking.system.vo.ParkingLot;
 
 import java.sql.Connection;
 
 public class DAOFactory {
+
+    /**
+    * * @Author zlf
+    * * @Description
+    * * @Date 上午11:39 18-2-19
+    *
+    */
     public static AdminDAO getIAdminDAOInstance(Connection conn){
         return new AdminDAOImpl(conn);
     }
@@ -24,5 +25,14 @@ public class DAOFactory {
     }
     public static ParkingLotDAO getIParkingLotDAOInstance(Connection conn){
         return new ParkingLotDAOImpl(conn);
+    }
+    /**
+    * * @Author exphuhong
+    * * @Description
+    * * @Date 上午11:39 18-2-19
+    *
+    */
+    public static MaintainDAO getIMaintainDAOInstance(Connection connection){
+        return new MaintainDAOImpl(connection);
     }
 }
