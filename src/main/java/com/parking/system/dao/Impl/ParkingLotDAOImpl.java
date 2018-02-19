@@ -32,15 +32,13 @@ public class ParkingLotDAOImpl extends AbstractDAOImpl implements ParkingLotDAO{
     }
 
     public boolean doUpdate(ParkingLot vo) throws SQLException {
-        String sql = "UPDATE parking_lot SET park_id=?,number=?,postion=?,createTime=?,updateTime=? WHERE id = ?";
+        String sql = "UPDATE parking_lot SET number=?,postion=?,updateTime=? WHERE id = ?";
         pstmt = super.conn.prepareStatement(sql);
         super.pstmt = super.conn.prepareStatement(sql);
-        super.pstmt.setInt(1,vo.getPark_id());
-        super.pstmt.setInt(2,vo.getNumber());
-        super.pstmt.setString(3,vo.getPosition());
-        super.pstmt.setDate(4, new Date(vo.getCreateTime().getTime()));
-        super.pstmt.setDate(5, new Date(vo.getUpdateTime().getTime()));
-        super.pstmt.setInt(6,vo.getId());
+        super.pstmt.setInt(1,vo.getNumber());
+        super.pstmt.setString(2,vo.getPosition());
+        super.pstmt.setDate(3, new Date(vo.getUpdateTime().getTime()));
+        super.pstmt.setInt(4,vo.getId());
         return pstmt.executeUpdate()>0? ResponseInfo.SUCCESS:ResponseInfo.FAIL;
     }
 
@@ -70,7 +68,13 @@ public class ParkingLotDAOImpl extends AbstractDAOImpl implements ParkingLotDAO{
     }
 
     public Integer getAllCount(String colum, String keyWord) throws SQLException {
-        return null;
+        String sql = "SELECT COUNT(*) FROM Parking_lot WHERE "+colum+" = "+keyWord;
+        super.pstmt = super.conn.prepareStatement(sql);
+        ResultSet rs = super.pstmt.executeQuery();
+        if(rs.next()){
+            return rs.getInt(1);
+        }
+        return 0;
     }
 
     public List<ParkingLot> findAllBySplitAndParkID(Integer parkId, Integer curentPage, Integer lineSize) throws SQLException {

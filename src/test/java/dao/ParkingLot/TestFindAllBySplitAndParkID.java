@@ -17,7 +17,7 @@ public class TestFindAllBySplitAndParkID {
         Integer lineSize =2;
         Integer parkId = 1;
         try {
-            parkingLots = DAOFactory.getIParkingLotInstance(new DatabaseConnection().getConn()).findAllBySplitAndParkID(parkId,curentPage,lineSize);
+            parkingLots = DAOFactory.getIParkingLotDAOInstance(new DatabaseConnection().getConn()).findAllBySplitAndParkID(parkId,curentPage,lineSize);
         } catch (SQLException e) {
             e.printStackTrace();
         }

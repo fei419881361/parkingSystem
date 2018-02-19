@@ -15,7 +15,7 @@ public class TestRemove {
         Set<Integer> ids = new HashSet<Integer>();
         ids.add(2);
         try {
-            b = DAOFactory.getIParkingLotInstance(new DatabaseConnection().getConn()).doRemove(ids);
+            b = DAOFactory.getIParkingLotDAOInstance(new DatabaseConnection().getConn()).doRemove(ids);
         } catch (SQLException e) {
             e.printStackTrace();
         }

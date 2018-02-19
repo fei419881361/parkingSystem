@@ -76,10 +76,10 @@
                 <a href="/pages/back/index.jsp"><i class="fa fa-yelp "></i>车位管理<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="pages/back/books/BooksServlet/insertPro"><i class="fa fa-coffee"></i>增加车位</a>
+                        <a href="pages/back/parkingLot/ParkingLotServlet/insertPro"><i class="fa fa-coffee"></i>增加车位</a>
                     </li>
                     <li>
-                        <a href="pages/back/books/BooksServlet/listSplit"><i class="fa fa-flash "></i>车位详情</a>
+                        <a href="pages/back/parkingLot/ParkingLotServlet/listSplit"><i class="fa fa-flash "></i>车位详情</a>
                     </li>
                 </ul>
             </li>

@@ -22,7 +22,7 @@ public class DAOFactory {
     public static CarDAO getICarDAOInstance(Connection conn){
         return new CarDAOImpl(conn);
     }
-    public static ParkingLotDAO getIParkingLotInstance(Connection conn){
+    public static ParkingLotDAO getIParkingLotDAOInstance(Connection conn){
         return new ParkingLotDAOImpl(conn);
     }
 }
