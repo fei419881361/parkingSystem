@@ -38,7 +38,7 @@ public class MaintainDAOImpl extends AbstractDAOImpl implements MaintainDAO {
     @Override
     public boolean doUpdate(Maintain vo) throws SQLException {
 
-        String sql = "UPDATE maintain SET type = ?, SET cost = ?,SET maintain_time = ?,SET updateTime = ?";
+        String sql = "UPDATE maintain SET type = ?,cost = ?,maintain_time = ?,updateTime = ?";
         pstmt = super.conn.prepareStatement(sql);
         pstmt.setInt(1, vo.getType());
         pstmt.setDouble(2, vo.getCost());

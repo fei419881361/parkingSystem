@@ -32,7 +32,7 @@
     <!-- 此处编写内容  -->
     <div id="page-wrapper">
         <div id="page-inner">
-            <c:if test="${allMaintains != null}">
+            <c:if test="${maintainList != null}">
                 <table class="table table-border">
                     <tr>
                         <th>保养编号</th>
@@ -43,7 +43,7 @@
                         <th>修改日期</th>
                         <th>操作</th>
                     </tr>
-                    <c:forEach items="${allMaintains}" var="maintain">
+                    <c:forEach items="${maintainList}" var="maintain">
                         <tr>
                             <td>${maintain.id}</td>
                             <td>${maintain.cost}</td>
@@ -53,7 +53,7 @@
                             <td>${maintain.updateTime}</td>
 
                             <td>
-                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" onclick=Value('${depot.id}','${depot.park_num}','${depot.developer}','${depot.position}') >修改</button>
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" onclick=Value('${maintain.id}','${maintain.cost}','${maintain.type}','${maintain.maintain_time}') >修改</button>
                             </td>
                         </tr>
                     </c:forEach>
@@ -139,18 +139,18 @@
         $('#type').val(type);
         $('#maintain_time').val(maintain_time);
     }
-    /*function updateInfo()
+    function updateInfo()
     {
         var xmlhttp;
         var id = $('#id').val();
-        var park_num = $('#park_num').val();
-        var developer = $('#developer').val();
-        var postion  = $('#postion').val();
+        var cost= $('#cost').val();
+        var type= $('#type').val();
+        var maintain_time= $('#maintain_time').val();
         var url = "";
-        if(park_num==""||developer==""||postion==""){
+        if(cost==""||type==""||maintain_time==""){
             alert("填写内容不能为空");
         }else {
-            url = "?park_num="+park_num+"&developer="+developer+"&postion="+postion+"&id="+id;
+            url = "?cost="+cost+"&type="+type+"&maintain_time="+maintain_time+"&id="+id;
         }
 
         if (window.XMLHttpRequest)
@@ -172,7 +172,7 @@
             }
         }
 
-        xmlhttp.open("GET","pages/back/depot/DepotServlet/update"+url,true);
+        xmlhttp.open("GET","pages/back/maintain/MaintainServlet/updateMaintain"+url,true);
         xmlhttp.send();
     }
 
@@ -202,9 +202,9 @@
             }
         }
 
-        xmlhttp.open("GET","pages/back/depot/DepotServlet/delete"+url,true);
+        xmlhttp.open("GET","pages/back/maintain/MaintainServlet/deleteMaintain"+url,true);
         xmlhttp.send();
-    }*/
+    }
 
 </script>
 </body>

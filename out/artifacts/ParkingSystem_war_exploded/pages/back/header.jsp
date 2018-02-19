@@ -100,7 +100,7 @@
                 <a href="./index.jsp"><i class="fa fa-bicycle "></i>车位保养管理 <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="pages/back/maintain/MaintainServlet/addMaintain"><i class="fa fa-desktop "></i>保养登记 </a>
+                        <a href="pages/back/maintain/MaintainServlet/insertPro"><i class="fa fa-desktop "></i>保养登记 </a>
                     </li>
                     <li>
                         <a href="pages/back/maintain/MaintainServlet/maintainInfo"><i class="fa fa-desktop "></i>保养记录 </a>
