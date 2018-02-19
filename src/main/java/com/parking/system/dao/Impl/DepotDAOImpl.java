@@ -30,6 +30,7 @@ public class DepotDAOImpl extends AbstractDAOImpl implements DepotDAO {
         return pstmt.executeUpdate()>0?ResponseInfo.SUCCESS:ResponseInfo.FAIL;
     }
 
+
     public boolean doUpdate(Depot vo) throws SQLException {
         String sql = "UPDATE depot SET developer=?,postion=?,park_num=?,updateTime=? WHERE id = ?";
         pstmt = super.conn.prepareStatement(sql);

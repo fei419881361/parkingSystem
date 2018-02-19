@@ -33,6 +33,7 @@ public class DepotServlet extends HttpServlet {
         if (status!=null){
             if("listSplit".equals(status)){
                 path = this.listSplit(req,"listSplit");
+                System.out.println(path);
             }else if("insert".equals(status)){
                 path = this.insert(req,resp);
             }else if("insertPro".equals(status)){
@@ -43,6 +44,7 @@ public class DepotServlet extends HttpServlet {
                 path = this.delete(req);
             }
         }
+        System.out.println(path);
         req.getRequestDispatcher(path).forward(req,resp);
     }
 
@@ -162,10 +164,9 @@ public class DepotServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        req.setAttribute("url", "/pages/back/depot/DepotServlet/"+method);
+       // req.setAttribute("url", "/pages/back/depot/DepotServlet/"+method);
         req.setAttribute("currentPage", currentPage);
         req.setAttribute("lineSize", lineSize);
-        System.out.println("listSplit");
         return "/pages/back/depot/depot_list.jsp";
     }
 }

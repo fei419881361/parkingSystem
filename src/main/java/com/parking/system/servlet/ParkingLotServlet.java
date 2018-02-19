@@ -26,4 +26,6 @@ public class ParkingLotServlet extends HttpServlet {
         }
         req.getRequestDispatcher(path).forward(req,resp);
     }
+
+
 }
