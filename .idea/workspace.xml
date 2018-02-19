@@ -6,12 +6,28 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="09bb7f33-2814-4a19-b0ad-d6e5937eac6d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/parking/system/dao/Impl/MaintainDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/parking/system/dao/Impl/MaintainDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/MaintainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/MaintainServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/back/header.jsp" afterPath="$PROJECT_DIR$/web/pages/back/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/back/maintain/maintain_insert.jsp" afterPath="$PROJECT_DIR$/web/pages/back/maintain/maintain_insert.jsp" />
+=======
+    <list default="true" id="fc521514-af3e-4cc7-8a02-cce894ecd25b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/parking/system/dbc/DatabaseConnection.java" afterPath="$PROJECT_DIR$/src/main/java/com/parking/system/dbc/DatabaseConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/parking/system/factory/ServiceFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/parking/system/factory/ServiceFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/ParkingLotServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/ParkingLotServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/MaintainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/MaintainServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/ParkingLotServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/ParkingLotServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/back/cars/car_insert.jsp" afterPath="$PROJECT_DIR$/web/pages/back/cars/car_insert.jsp" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/back/maintain/maintain_list.jsp" afterPath="$PROJECT_DIR$/web/pages/back/maintain/maintain_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/back/parkingLot/parkingLot_insert.jsp" afterPath="$PROJECT_DIR$/web/pages/back/parkingLot/parkingLot_insert.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,6 +38,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
@@ -63,10 +80,21 @@
                 <element signature="method#deleteMaintain#0;class#MaintainServlet#0" expanded="false" />
                 <element signature="method#updateMaintain#0;class#MaintainServlet#0" expanded="false" />
               </folding>
+=======
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ParkingLotServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/ParkingLotServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="110" column="25" lean-forward="false" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+              <folding />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="DepotServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/DepotServlet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,40 +105,83 @@
                 <element signature="method#delete#0;class#DepotServlet#0" expanded="false" />
                 <element signature="method#insert#0;class#DepotServlet#0" expanded="false" />
               </folding>
+=======
+      <file leaf-file-name="parkingLot_list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/pages/back/parkingLot/parkingLot_list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="98" column="184" lean-forward="true" selection-start-line="98" selection-start-column="103" selection-end-line="98" selection-end-column="184" />
+              <folding />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="maintain_insert.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/back/maintain/maintain_insert.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
               <caret line="73" column="46" lean-forward="true" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+=======
+      <file leaf-file-name="parkingLot_insert.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/pages/back/parkingLot/parkingLot_insert.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="MaintainServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/MaintainServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
               <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+=======
+      <file leaf-file-name="ParkingLotService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/ParkingLotService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ParkingLotServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/ParkingLotServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="31" column="83" lean-forward="false" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="DepotServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/DepotServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
               <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+=======
+      <file leaf-file-name="depot_insert.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/pages/back/depot/depot_insert.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-420">
+              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="MaintainDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/Impl/MaintainDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,6 +195,14 @@
                 <marker date="1519030163261" expanded="true" signature="2508:2601" ph="SELECT m.id,... maintain" />
                 <marker date="1519030163261" expanded="true" signature="3473:3502" ph="SELECT COUNT... maintain" />
               </folding>
+=======
+      <file leaf-file-name="CarServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/CarServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="152" column="36" lean-forward="true" selection-start-line="115" selection-start-column="7" selection-end-line="152" selection-end-column="36" />
+              <folding />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
             </state>
           </provider>
         </entry>
@@ -131,8 +210,13 @@
       <file leaf-file-name="CarServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/CarServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="72">
               <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+=======
+            <state relative-caret-position="392">
+              <caret line="77" column="24" lean-forward="true" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
               <folding />
             </state>
           </provider>
@@ -140,42 +224,18 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="Jsp File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>K</find>
-      <find>account</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="F:/666/tdd-kata-java" value="4489360788820" />
-      </map>
-    </option>
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/MaintainServlet.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/CarServlet.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/DepotServlet.java" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/parking/system/dao/CarDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/Car/TestFindByFuzzy.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/ParkingLot/TestCreate.java" />
@@ -210,15 +270,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/BillServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/ParkingLotServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/AdminServlet.java" />
+=======
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
         <option value="$PROJECT_DIR$/src/main/java/com/parking/system/factory/ServiceFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/parking/system/vo/Maintain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/parking/system/factory/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/parking/system/service/MaintainService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/parking/system/dao/MaintainDAO.java" />
-        <option value="$PROJECT_DIR$/web/pages/back/maintain/maintain_update.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/MaintainServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/parking/system/dao/Impl/DepotDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/parking/system/dbc/DatabaseConnection.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/web/pages/errors.js.jsp" />
         <option value="$PROJECT_DIR$/web/pages/errors.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/DepotServlet.java" />
@@ -227,6 +284,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/parking/system/dao/Impl/MaintainDAOImpl.java" />
         <option value="$PROJECT_DIR$/web/pages/back/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/MaintainServlet.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/MaintainServlet.java" />
+        <option value="$PROJECT_DIR$/web/pages/back/maintain/maintain_list.jsp" />
+        <option value="$PROJECT_DIR$/web/pages/back/cars/car_insert.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/ParkingLotServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/parking/system/servlet/ParkingLotServlet.java" />
+        <option value="$PROJECT_DIR$/web/pages/back/parkingLot/parkingLot_insert.jsp" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
       </list>
     </option>
   </component>
@@ -239,15 +304,14 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="$USER_HOME$/.m2/RepMaven" />
-        <option name="mavenHome" value="/usr/maven/apache-maven-3.3.9" />
+        <option name="mavenHome" value="F:/IDEAR/apache-maven-3.3.9-bin/apache-maven-3.3.9" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -255,15 +319,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="57" />
-    <option name="y" value="24" />
-    <option name="width" value="1307" />
-    <option name="height" value="708" />
-  </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -280,61 +335,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="Impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -342,17 +379,8 @@
               <item name="dbc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -360,8 +388,8 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -370,8 +398,8 @@
               <item name="Impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -379,39 +407,54 @@
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="back" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="cars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="depot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="maintain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParkingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="parkingLot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -433,20 +476,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-    <property name="nodejs_interpreter_path" value="F:/Node/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
+<<<<<<< HEAD
     <property name="project.structure.side.proportion" value="0.55978745" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/exphuhong/IdeaProjects/parkingSystem/web/pages/back/maintain/maintain_list.jsp" />
@@ -466,6 +506,10 @@
       <recent name="F:\ifox_project\ParkingSystem\web\assets\css" />
       <recent name="F:\ifox_project\ParkingSystem\web\assets\fonts" />
     </key>
+=======
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -480,119 +524,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration name="MD5test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="test.MD5test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ParkingSystem" />
-      <envs />
-    </configuration>
-    <configuration name="TestFindAllBySplitAndParkID.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dao.ParkingLot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ParkingSystem" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dao.ParkingLot" />
-      <option name="MAIN_CLASS_NAME" value="dao.ParkingLot.TestFindAllBySplitAndParkID" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TestFindAll.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dao.Depot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ParkingSystem" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dao.Depot" />
-      <option name="MAIN_CLASS_NAME" value="dao.Depot.TestFindAll" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TestMD5Code" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.parking.system.util.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.parking.system.util.Test.TestMD5Code" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ParkingSystem" />
-      <envs />
-    </configuration>
-    <configuration name="TestUpdate.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dao.ParkingLot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ParkingSystem" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dao.ParkingLot" />
-      <option name="MAIN_CLASS_NAME" value="dao.ParkingLot.TestUpdate" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.37" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -603,7 +534,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ParkingSystem" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ParkingSystem_3" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -612,7 +543,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="41749" />
+        <option name="DEBUG_PORT" value="44575" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -666,6 +597,7 @@
       </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -745,33 +677,17 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestUpdate.test (1)" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestFindAllBySplitAndParkID.test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TestMD5Code" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestFindAll.test" />
-      <item index="5" class="java.lang.String" itemvalue="Application.MD5test" />
-    </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MD5test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestFindAll.test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TestMD5Code" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestFindAllBySplitAndParkID.test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestUpdate.test (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="09bb7f33-2814-4a19-b0ad-d6e5937eac6d" name="Default" comment="" />
-      <created>1518161933631</created>
+      <changelist id="fc521514-af3e-4cc7-8a02-cce894ecd25b" name="Default" comment="" />
+      <created>1519027844752</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1518161933631</updated>
       <workItem from="1518161938838" duration="7094000" />
       <workItem from="1518169617075" duration="893000" />
@@ -784,42 +700,15 @@
       <workItem from="1519008214437" duration="5090000" />
       <workItem from="1519016063312" duration="8407000" />
       <workItem from="1519025316522" duration="5699000" />
+=======
+      <updated>1519027844752</updated>
+      <workItem from="1519027846635" duration="2287000" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="TestFindAllBySplitAndParkID_test - 2018.02.16 at 23h 43m 36s.xml">
-      <configuration name="TestFindAllBySplitAndParkID.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFindAll_test - 2018.02.18 at 22h 50m 03s.xml">
-      <configuration name="TestFindAll.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFindAll_test - 2018.02.18 at 22h 51m 26s.xml">
-      <configuration name="TestFindAll.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFindByCarNumAndParkId_test - 2018.02.16 at 22h 11m 23s.xml">
-      <configuration name="TestFindByCarNumAndParkId.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFindByFuzzy_test - 2018.02.16 at 22h 36m 28s.xml">
-      <configuration name="TestFindByFuzzy.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFindByFuzzy_test - 2018.02.16 at 22h 36m 46s.xml">
-      <configuration name="TestFindByFuzzy.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFindByFuzzy_test - 2018.02.16 at 22h 40m 44s.xml">
-      <configuration name="TestFindByFuzzy.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRemove_test - 2018.02.16 at 23h 35m 35s.xml">
-      <configuration name="TestRemove.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUpdate_test_(1) - 2018.02.16 at 23h 38m 09s.xml">
-      <configuration name="TestUpdate.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUpdate_test_(1) - 2018.02.16 at 23h 39m 08s.xml">
-      <configuration name="TestUpdate.test (1)" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="95452000" />
   </component>
   <component name="TodoView">
@@ -830,21 +719,25 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+=======
+    <option name="totallyTimeSpent" value="2287000" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="24" width="1311" height="780" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286219" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3345112" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.4972419" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5027581" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27444053" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.4972419" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37904468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.4972419" order="11" side_tool="false" content_ui="tabs" />
@@ -853,51 +746,29 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20882584" sideWeight="0.49131513" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20882584" sideWeight="0.5086849" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16863672" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819724" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27444053" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20376915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1722103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286219" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27444053" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2027897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -906,124 +777,96 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
+<<<<<<< HEAD
     <breakpoint-manager>
       <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+=======
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-755">
+          <caret line="1087" column="9" lean-forward="false" selection-start-line="1087" selection-start-column="9" selection-end-line="1087" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/factory/ServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        <state relative-caret-position="364">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#843#844#0" expanded="false" />
-            <element signature="e#886#887#0" expanded="false" />
-            <element signature="e#1049#1050#0" expanded="false" />
-            <element signature="e#1097#1098#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7d9b851a-51b2-4eb2-981d-bfb78453e5f8/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dbc/DatabaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/ParkingLotServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="311">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/ParkingLotDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/DepotServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/DepotDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        <state relative-caret-position="-1209">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="method#delete#0;class#DepotServlet#0" expanded="false" />
+            <element signature="method#update#0;class#DepotServlet#0" expanded="false" />
+            <element signature="method#insert#0;class#DepotServlet#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/AbstractDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/web/pages/back/maintain/maintain_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="-616">
+          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/CarDAO.java">
+    <entry file="jar://F:/apache/tomcat/lib/servlet-api.jar!/javax/servlet/ServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="271">
+          <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_111/src.zip!/java/util/Date.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/MaintainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="883" column="16" lean-forward="false" selection-start-line="883" selection-start-column="16" selection-end-line="883" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="48" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="336">
+          <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/Impl/CarDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/Impl/MaintainDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="28" column="64" lean-forward="false" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+        <state relative-caret-position="-1549">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
-            <element signature="method#findByFuzzy#0;class#CarDAOImpl#0" expanded="false" />
-            <marker date="1519008155901" expanded="true" signature="633:731" ph="INSERT INTO car... " />
-            <marker date="1519008155901" expanded="true" signature="1307:1394" ph="UPDATE car S... " />
-            <marker date="1519008155901" expanded="true" signature="1985:2013" ph="DELETE FROM " />
-            <marker date="1519008155901" expanded="true" signature="2634:2739" ph="SELECT c.id,... car" />
-            <marker date="1519008155901" expanded="true" signature="3487:3534" ph="SELECT COUNT... car" />
-            <marker date="1519008155901" expanded="true" signature="3874:4003" ph="SELECT c.id,... car" />
-            <marker date="1519008155901" expanded="true" signature="4662:4852" ph="SELECT c.id,... car" />
+            <marker date="1519027574598" expanded="true" signature="735:806" ph="insert into maintain... " />
+            <marker date="1519027574598" expanded="true" signature="1244:1327" ph="UPDATE maint... " />
+            <marker date="1519027574598" expanded="true" signature="1854:1887" ph="DELETE FROM " />
+            <marker date="1519027574598" expanded="true" signature="2521:2614" ph="SELECT m.id,... maintain" />
+            <marker date="1519027574598" expanded="true" signature="3486:3515" ph="SELECT COUNT... maintain" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/util/Validate/ValidateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/factory/DAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding>
-            <element signature="e#922#923#0" expanded="false" />
-            <element signature="e#976#977#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/vo/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1033,13 +876,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/BillServlet.java">
+=======
+    <entry file="file://$PROJECT_DIR$/web/pages/back/header.jsp">
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="392">
+          <caret line="77" column="24" lean-forward="true" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/MaintainDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1051,44 +898,49 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/AdminService.java">
+=======
+    <entry file="file://$PROJECT_DIR$/web/pages/back/maintain/maintain_insert.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/AdminDAO.java">
+    <entry file="file://$PROJECT_DIR$/web/pages/back/depot/depot_insert.jsp">
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="-420">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/CarServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="152" column="36" lean-forward="true" selection-start-line="115" selection-start-column="7" selection-end-line="152" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/back/cars/car_insert.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="85" column="10" lean-forward="false" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/back/cars/car_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1142">
-          <caret line="118" column="104" lean-forward="false" selection-start-line="118" selection-start-column="104" selection-end-line="118" selection-end-column="104" />
+        <state relative-caret-position="168">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="57" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/BaseDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/ParkingLotService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="461">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/util/filter/EncodingFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1108,10 +960,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/ParkingLotServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="31" column="83" lean-forward="false" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dbc/DatabaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1259,10 +1118,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-453">
           <caret line="34" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/servlet/ParkingLotServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="110" column="25" lean-forward="false" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/service/Impl/CarServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1283,10 +1149,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+=======
+    <entry file="file://$PROJECT_DIR$/web/pages/back/parkingLot/parkingLot_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="98" column="184" lean-forward="true" selection-start-line="98" selection-start-column="103" selection-end-line="98" selection-end-column="184" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="das://table:/b2f7184f/7d9b851a-51b2-4eb2-981d-bfb78453e5f8/nodesample.maintain">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1313,10 +1186,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="102" column="78" lean-forward="false" selection-start-line="102" selection-start-column="78" selection-end-line="102" selection-end-column="78" />
+=======
+    <entry file="file://$PROJECT_DIR$/web/pages/back/parkingLot/parkingLot_insert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parking/system/dao/Impl/DepotDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1367,6 +1247,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
   </component>
   <component name="masterDetails">
     <states>
@@ -1377,7 +1259,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.55978745" />
+                <option value="0.2" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1390,7 +1272,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.55978745" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1402,7 +1284,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.55978745" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1414,7 +1296,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.55978745" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1426,19 +1308,6 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.55978745" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
                 <option value="0.2" />
               </list>
             </option>
@@ -1447,11 +1316,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: mysql:mysql-connector-java:5.1.38</last-edited>
+          <last-edited>Maven: javax.servlet:jstl:1.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.55978745" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

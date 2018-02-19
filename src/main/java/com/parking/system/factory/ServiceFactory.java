@@ -6,8 +6,14 @@ import com.parking.system.service.DepotService;
 import com.parking.system.service.Impl.AdminServiceImpl;
 import com.parking.system.service.Impl.CarServiceImpl;
 import com.parking.system.service.Impl.DepotServiceImpl;
+
+import com.parking.system.service.Impl.ParkingLotServiceImpl;
+import com.parking.system.service.ParkingLotService;
+import com.parking.system.vo.ParkingLot;
+
 import com.parking.system.service.Impl.MaintainServiceImpl;
 import com.parking.system.service.MaintainService;
+
 
 public class ServiceFactory {
     /**
@@ -24,6 +30,9 @@ public class ServiceFactory {
     }
     public static CarService getICarServiceInstence(){
         return new CarServiceImpl();
+    }
+    public static ParkingLotService getIParkingLotServiceInstence(){
+        return new ParkingLotServiceImpl();
     }
 
     /**

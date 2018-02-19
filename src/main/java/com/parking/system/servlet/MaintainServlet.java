@@ -70,6 +70,7 @@ public class MaintainServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         request.setAttribute("currentPage", currentPage);
         request.setAttribute("lineSize", lineSize);
         return "/pages/back/maintain/maintain_list.jsp";

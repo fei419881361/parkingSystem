@@ -16,7 +16,7 @@ public class TestUpdate {
         boolean b = false;
         ParkingLot parkingLot = new ParkingLot(1,1,321,"资料发",date,date);
         try {
-            b = DAOFactory.getIParkingLotInstance(new DatabaseConnection().getConn()).doUpdate(parkingLot);
+            b = DAOFactory.getIParkingLotDAOInstance(new DatabaseConnection().getConn()).doUpdate(parkingLot);
         } catch (SQLException e) {
             e.printStackTrace();
         }

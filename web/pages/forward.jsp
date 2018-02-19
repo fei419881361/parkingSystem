@@ -9,7 +9,7 @@
 <html>
 <head>
     <base href="<%=basePath%>">
-    <title>图书管理系统</title>
+    <title>停车场管理系统</title>
 </head>
 <body>
 <script type="text/javascript">

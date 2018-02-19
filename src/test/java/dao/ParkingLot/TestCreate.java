@@ -16,7 +16,7 @@ public class TestCreate {
         ParkingLot parkingLot = new ParkingLot(1,123,"朝天门外30",date,date);
         try {
             for (int i = 0 ; i<10; i++) {
-                DAOFactory.getIParkingLotInstance(new DatabaseConnection().getConn()).doCreate(parkingLot);
+                DAOFactory.getIParkingLotDAOInstance(new DatabaseConnection().getConn()).doCreate(parkingLot);
             }
         } catch (SQLException e) {
             e.printStackTrace();
