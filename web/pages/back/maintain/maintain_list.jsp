@@ -32,7 +32,6 @@
     <!-- 此处编写内容  -->
     <div id="page-wrapper">
         <div id="page-inner">
-<<<<<<< HEAD
             <c:if test="${maintainList != null}">
                 <table class="table table-border">
                     <tr>
@@ -63,38 +62,6 @@
                     <jsp:include page="/pages/split_bar.jsp"></jsp:include>
                 </div>
             </c:if>
-=======
-            <%--<c:if test="${allMaintains != null}">--%>
-                <%--<table class="table table-border">--%>
-                    <%--<tr>--%>
-                        <%--<th>保养编号</th>--%>
-                        <%--<th>保养花费</th>--%>
-                        <%--<th>保养类型</th>--%>
-                        <%--<th>保养时间</th>--%>
-                        <%--<th>创建日期</th>--%>
-                        <%--<th>修改日期</th>--%>
-                        <%--<th>操作</th>--%>
-                    <%--</tr>--%>
-                    <%--&lt;%&ndash;<c:forEach items="${allMaintains}" var="maintain">&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;<tr>&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;&lt;%&ndash;<td>${maintain.id}</td>&ndash;%&gt;&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;&lt;%&ndash;<td>${maintain.cost}</td>&ndash;%&gt;&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;&lt;%&ndash;<td>${maintain.type}</td>&ndash;%&gt;&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;&lt;%&ndash;<td>${maintain.maintain_time}</td>&ndash;%&gt;&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;&lt;%&ndash;<td>${maintain.createTime}</td>&ndash;%&gt;&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;&lt;%&ndash;<td>${maintain.updateTime}</td>&ndash;%&gt;&ndash;%&gt;--%>
-
-                            <%--&lt;%&ndash;<td>&ndash;%&gt;--%>
-                                <%--&lt;%&ndash;<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" onclick=Value('${depot.id}','${depot.park_num}','${depot.developer}','${depot.position}') >修改</button>&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;</td>&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;</tr>&ndash;%&gt;--%>
-                    <%--&lt;%&ndash;</c:forEach>&ndash;%&gt;--%>
-                <%--</table>--%>
-                <%--<div class="col-md-5 col-md-offset-3">--%>
-                    <%--<jsp:include page="/pages/split_bar.jsp"></jsp:include>--%>
-                <%--</div>--%>
-            <%--</c:if>--%>
->>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
         </div>
     </div>
 </div>

@@ -1,6 +1,13 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 41988
+  Date: 2018/2/17
+  Time: 0:18
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <%
         String path = request.getContextPath();
@@ -20,46 +27,38 @@
 </head>
 <body>
 <div id="wrapper">
-    <jsp:include page="/pages/back/header.jsp"></jsp:include>
+    <jsp:include page="/pages/back/header.jsp"/>
 
     <!-- 此处编写内容  -->
     <div id="page-wrapper">
         <div id="page-inner">
-            <c:if test="${allLenbooks != null}">
-            <table class="table table-border">
-                <tr>
-                    <th>编号</th>
-                    <th>图书名称</th>
-                    <th>真实姓名</th>
-                    <th>创建日期</th>
-                    <th>是否归还</th>
-                    <th>归还日期</th>
-                    <th>操作</th>
-                </tr>
-                <c:forEach items="${allLenbooks}" var="len">
-                   <tr>
-                       <td>${len.leid}</td>
-                       <td>${len.books.name}</td>
-                       <td>${len.member.name}</td>
-                       <td>${len.credate}</td>
-                       <td>
-                           <c:if test="${len.retdate != null}">
-                               已经归还
-                           </c:if>
-                           <c:if test="${len.retdate == null}">
-                               还未归还
-                           </c:if>
-                       </td>
-                       <td>${len.retdate}</td>
-                       <td>
-                           <c:if test="${len.retdate == null}">
-                               <a href="<%=request.getContextPath()%>/pages/back/lenbook/LenbookServlet/updateByRetdate?leid=${len.leid}&bid=${len.books.bid}">归还图书</a>
-                           </c:if>
-                       </td>
-                   </tr>
-                </c:forEach>
-            </table>
-                <div class="col-md-5 col-md-offset-5">
+            <c:if test="${billList != null}">
+                <table class="table table-border">
+                    <tr>
+                        <th>保养编号</th>
+                        <th>保养花费</th>
+                        <th>保养类型</th>
+                        <th>保养时间</th>
+                        <th>创建日期</th>
+                        <th>修改日期</th>
+                        <th>操作</th>
+                    </tr>
+                    <c:forEach items="${maintainList}" var="maintain">
+                        <tr>
+                            <td>${maintain.id}</td>
+                            <td>${maintain.cost}</td>
+                            <td>${maintain.type}</td>
+                            <td>${maintain.maintain_time}</td>
+                            <td>${maintain.createTime}</td>
+                            <td>${maintain.updateTime}</td>
+
+                            <td>
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" onclick=Value('${maintain.id}','${maintain.cost}','${maintain.type}','${maintain.maintain_time}') >修改</button>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </table>
+                <div class="col-md-5 col-md-offset-3">
                     <jsp:include page="/pages/split_bar.jsp"></jsp:include>
                 </div>
             </c:if>
@@ -67,8 +66,57 @@
     </div>
 </div>
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    修改信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="insertForm">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <input type="hidden" name="id" id="id" class="form-control input-sm">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cost" class="col-md-3 control-label">保养花费</label>
+                        <div class="col-md-6">
+                            <input type="text" name="cost" id="cost" class="form-control input-sm" onkeypress="return event.keyCode>=48&&event.keyCode<=57" ng-pattern="/[^a-zA-Z]/">
+                        </div>
+                    </div>
 
-<jsp:include page="/pages/back/footer.jsp"></jsp:include>
+                    <div class="form-group">
+                        <label for="type" class="col-md-3 control-label">保养类型</label>
+                        <div class="col-md-6">
+                            <input type="type" name="type" id="type" class="form-control input-sm" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="maintain_time" class="col-md-3 control-label">保养时间</label>
+                        <div class="col-md-6">
+                            <textarea name="maintain_time" id="maintain_time" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <%--<button type="button" class="btn btn-default" data-dismiss="modal" >关闭--%>
+                <%--</button>--%>
+                <button type="button" class="btn btn-primary" onclick="updateInfo()">
+                    保存
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<jsp:include page="/pages/back/footer.jsp"/>
 <script src="assets/js/jquery-1.10.2.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/jquery.metisMenu.js"></script>
@@ -84,6 +132,80 @@
     $(function () {
         $("tr:even").css("background","#EFEFEF");
     })
+
+    function Value(id,cost,type,maintain_time) {
+        $('#id').val(id);
+        $('#cost').val(cost);
+        $('#type').val(type);
+        $('#maintain_time').val(maintain_time);
+    }
+    function updateInfo()
+    {
+        var xmlhttp;
+        var id = $('#id').val();
+        var cost= $('#cost').val();
+        var type= $('#type').val();
+        var maintain_time= $('#maintain_time').val();
+        var url = "";
+        if(cost==""||type==""||maintain_time==""){
+            alert("填写内容不能为空");
+        }else {
+            url = "?cost="+cost+"&type="+type+"&maintain_time="+maintain_time+"&id="+id;
+        }
+
+        if (window.XMLHttpRequest)
+        {
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            // IE6, IE5 浏览器执行代码
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                alert("修改成功");
+                window.location.reload();
+            }
+        }
+
+        xmlhttp.open("GET","pages/back/maintain/MaintainServlet/updateMaintain"+url,true);
+        xmlhttp.send();
+    }
+
+    function deleteItem() {
+        var xmlhttp;
+        var id = $('#id').val();
+        var url = "";
+
+        url = "?id="+id;
+
+        if (window.XMLHttpRequest)
+        {
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            // IE6, IE5 浏览器执行代码
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                alert("删除成功");
+                window.location.reload();
+            }
+        }
+
+        xmlhttp.open("GET","pages/back/maintain/MaintainServlet/deleteMaintain"+url,true);
+        xmlhttp.send();
+    }
+
 </script>
 </body>
 </html>
