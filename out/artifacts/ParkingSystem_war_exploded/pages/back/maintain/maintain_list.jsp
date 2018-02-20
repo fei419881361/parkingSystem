@@ -32,6 +32,38 @@
     <!-- 此处编写内容  -->
     <div id="page-wrapper">
         <div id="page-inner">
+<<<<<<< HEAD
+            <c:if test="${maintainList != null}">
+                <table class="table table-border">
+                    <tr>
+                        <th>保养编号</th>
+                        <th>保养花费</th>
+                        <th>保养类型</th>
+                        <th>保养时间</th>
+                        <th>创建日期</th>
+                        <th>修改日期</th>
+                        <th>操作</th>
+                    </tr>
+                    <c:forEach items="${maintainList}" var="maintain">
+                        <tr>
+                            <td>${maintain.id}</td>
+                            <td>${maintain.cost}</td>
+                            <td>${maintain.type}</td>
+                            <td>${maintain.maintain_time}</td>
+                            <td>${maintain.createTime}</td>
+                            <td>${maintain.updateTime}</td>
+
+                            <td>
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" onclick=Value('${maintain.id}','${maintain.cost}','${maintain.type}','${maintain.maintain_time}') >修改</button>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </table>
+                <div class="col-md-5 col-md-offset-3">
+                    <jsp:include page="/pages/split_bar.jsp"></jsp:include>
+                </div>
+            </c:if>
+=======
             <%--<c:if test="${allMaintains != null}">--%>
                 <%--<table class="table table-border">--%>
                     <%--<tr>--%>
@@ -62,6 +94,7 @@
                     <%--<jsp:include page="/pages/split_bar.jsp"></jsp:include>--%>
                 <%--</div>--%>
             <%--</c:if>--%>
+>>>>>>> 7cb6b326b505c4a01a310914d35cd52dcb8e247e
         </div>
     </div>
 </div>
@@ -139,18 +172,18 @@
         $('#type').val(type);
         $('#maintain_time').val(maintain_time);
     }
-    /*function updateInfo()
+    function updateInfo()
     {
         var xmlhttp;
         var id = $('#id').val();
-        var park_num = $('#park_num').val();
-        var developer = $('#developer').val();
-        var postion  = $('#postion').val();
+        var cost= $('#cost').val();
+        var type= $('#type').val();
+        var maintain_time= $('#maintain_time').val();
         var url = "";
-        if(park_num==""||developer==""||postion==""){
+        if(cost==""||type==""||maintain_time==""){
             alert("填写内容不能为空");
         }else {
-            url = "?park_num="+park_num+"&developer="+developer+"&postion="+postion+"&id="+id;
+            url = "?cost="+cost+"&type="+type+"&maintain_time="+maintain_time+"&id="+id;
         }
 
         if (window.XMLHttpRequest)
@@ -172,7 +205,7 @@
             }
         }
 
-        xmlhttp.open("GET","pages/back/depot/DepotServlet/update"+url,true);
+        xmlhttp.open("GET","pages/back/maintain/MaintainServlet/updateMaintain"+url,true);
         xmlhttp.send();
     }
 
@@ -202,9 +235,9 @@
             }
         }
 
-        xmlhttp.open("GET","pages/back/depot/DepotServlet/delete"+url,true);
+        xmlhttp.open("GET","pages/back/maintain/MaintainServlet/deleteMaintain"+url,true);
         xmlhttp.send();
-    }*/
+    }
 
 </script>
 </body>

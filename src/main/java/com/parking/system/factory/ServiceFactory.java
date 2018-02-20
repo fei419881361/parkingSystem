@@ -1,18 +1,9 @@
 package com.parking.system.factory;
 
-import com.parking.system.service.AdminService;
-import com.parking.system.service.CarService;
-import com.parking.system.service.DepotService;
-import com.parking.system.service.Impl.AdminServiceImpl;
-import com.parking.system.service.Impl.CarServiceImpl;
-import com.parking.system.service.Impl.DepotServiceImpl;
+import com.parking.system.service.*;
+import com.parking.system.service.Impl.*;
 
-import com.parking.system.service.Impl.ParkingLotServiceImpl;
-import com.parking.system.service.ParkingLotService;
 import com.parking.system.vo.ParkingLot;
-
-import com.parking.system.service.Impl.MaintainServiceImpl;
-import com.parking.system.service.MaintainService;
 
 
 public class ServiceFactory {
@@ -44,5 +35,8 @@ public class ServiceFactory {
         return new MaintainServiceImpl();
     }
 
+    public static BillService getIBillServiceInstance() {
+        return new BillServiceImpl();
+    }
 
 }

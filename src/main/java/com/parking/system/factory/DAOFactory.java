@@ -35,4 +35,8 @@ public class DAOFactory {
     public static MaintainDAO getIMaintainDAOInstance(Connection connection){
         return new MaintainDAOImpl(connection);
     }
+
+    public static BillDAO getIBillDAOInstance(Connection connection) {
+        return new BillDAOImpl(connection);
+    }
 }
