@@ -9,11 +9,11 @@ import java.sql.Connection;
 public class DAOFactory {
 
     /**
-    * * @Author zlf
-    * * @Description
-    * * @Date 上午11:39 18-2-19
-    *
-    */
+     * * @Author zlf
+     * * @Description
+     * * @Date 上午11:39 18-2-19
+     *
+     */
     public static AdminDAO getIAdminDAOInstance(Connection conn){
         return new AdminDAOImpl(conn);
     }
@@ -23,16 +23,20 @@ public class DAOFactory {
     public static CarDAO getICarDAOInstance(Connection conn){
         return new CarDAOImpl(conn);
     }
-    public static ParkingLotDAO getIParkingLotInstance(Connection conn){
+    public static ParkingLotDAO getIParkingLotDAOInstance(Connection conn){
         return new ParkingLotDAOImpl(conn);
     }
     /**
-    * * @Author exphuhong
-    * * @Description
-    * * @Date 上午11:39 18-2-19
-    *
-    */
+     * * @Author exphuhong
+     * * @Description
+     * * @Date 上午11:39 18-2-19
+     *
+     */
     public static MaintainDAO getIMaintainDAOInstance(Connection connection){
         return new MaintainDAOImpl(connection);
+    }
+
+    public static BillDAO getIBillDAOInstance(Connection connection) {
+        return new BillDAOImpl(connection);
     }
 }

@@ -100,7 +100,7 @@ public class CarDAOImpl extends AbstractDAOImpl implements CarDAO {
         return 0;
     }
 
-    public Car findByCarNumAndParkID(Car vo) throws SQLException {
+    public boolean findByCarNumAndParkID(Car vo) throws SQLException {
         String sql = "SELECT c.id,c.owner_name,c.owner_phone,c.createTime,c.updateTime FROM car c" +
                 " WHERE car_num = ? AND park_id= ?";
         super.pstmt = super.conn.prepareStatement(sql);
@@ -108,14 +108,8 @@ public class CarDAOImpl extends AbstractDAOImpl implements CarDAO {
         pstmt.setInt(2,vo.getPark_id());
 
         ResultSet rs = pstmt.executeQuery();
-        while (rs.next()) {
-            vo.setId(rs.getInt(rs.getInt(1)));
-            vo.setOwner_name(rs.getString(2));
-            vo.setOwner_phone(rs.getString(3));
-            vo.setCreateTime(rs.getDate(4));
-            vo.setUpdateTime(rs.getDate(5));
-        }
-        return vo;
+        return rs.next() ? ResponseInfo.SUCCESS : ResponseInfo.FAIL;
+
     }
 
     public List<Car> findByFuzzy(String key,Integer curentPage, Integer lineSize) throws SQLException {

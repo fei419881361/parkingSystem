@@ -9,7 +9,7 @@ import java.util.Date;
 public class Maintain {
     private Integer id;
     private Double cost;
-    private Integer type;
+    private String type;
     private String maintain_time;
     private Date createTime;
     private Date updateTime;
@@ -17,7 +17,7 @@ public class Maintain {
     public Maintain() {
     }
 
-    public Maintain(Integer id, Double cost, Integer type, String maintain_time, Date createTime, Date updateTime) {
+    public Maintain(Integer id, Double cost, String type, String maintain_time, Date createTime, Date updateTime) {
         this.id = id;
         this.cost = cost;
         this.type = type;
@@ -26,7 +26,7 @@ public class Maintain {
         this.updateTime = updateTime;
     }
 
-    public Maintain(Double cost, Integer type, String maintain_time, Date createTime) {
+    public Maintain(Double cost, String type, String maintain_time, Date createTime) {
         this.cost = cost;
         this.type = type;
         this.maintain_time = maintain_time;
@@ -49,11 +49,11 @@ public class Maintain {
         this.cost = cost;
     }
 
-    public Integer getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Integer type) {
+    public void setType(String type) {
         this.type = type;
     }
 

@@ -6,6 +6,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface CarDAO extends BaseDAO<Integer,Car>  {
-    Car findByCarNumAndParkID(Car vo) throws SQLException;
+    boolean findByCarNumAndParkID(Car vo) throws SQLException;
     List<Car> findByFuzzy(String key,Integer curentPage, Integer lineSize)throws SQLException;
 }

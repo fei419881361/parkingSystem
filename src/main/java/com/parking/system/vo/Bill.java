@@ -9,15 +9,15 @@ public class Bill {
     private String number;
     private String owner_name;
     private String owner_phone;
-    private Date in_time;
-    private Date out_time;
+    private String in_time;
+    private String out_time;
     private Date createTime;
     private Date updateTime;
 
     public Bill() {
     }
 
-    public Bill(Integer park_id, Double bill, String number, String owner_name, String owner_phone, Date in_time, Date out_time, Date createTime, Date updateTime) {
+    public Bill(Integer park_id, Double bill, String number, String owner_name, String owner_phone, String in_time, String out_time, Date createTime, Date updateTime) {
         this.park_id = park_id;
         this.bill = bill;
         this.number = number;
@@ -29,7 +29,7 @@ public class Bill {
         this.updateTime = updateTime;
     }
 
-    public Bill(Integer id, Integer park_id, Double bill, String number, String owner_name, String owner_phone, Date in_time, Date out_time, Date createTime, Date updateTime) {
+    public Bill(Integer id, Integer park_id, Double bill, String number, String owner_name, String owner_phone, String in_time, String out_time, Date createTime, Date updateTime) {
         this.id = id;
         this.park_id = park_id;
         this.bill = bill;
@@ -90,19 +90,19 @@ public class Bill {
         this.owner_phone = owner_phone;
     }
 
-    public Date getIn_time() {
+    public String getIn_time() {
         return in_time;
     }
 
-    public void setIn_time(Date in_time) {
+    public void setIn_time(String in_time) {
         this.in_time = in_time;
     }
 
-    public Date getOut_time() {
+    public String getOut_time() {
         return out_time;
     }
 
-    public void setOut_time(Date out_time) {
+    public void setOut_time(String out_time) {
         this.out_time = out_time;
     }
 

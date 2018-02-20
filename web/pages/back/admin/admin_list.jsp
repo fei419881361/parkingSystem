@@ -25,29 +25,34 @@
     <!-- 此处编写内容  -->
     <div id="page-wrapper">
         <div id="page-inner">
-            <c:if test="${allMembers != null}">
+            <c:if test="${adminList != null}">
                 <table class="table table-border">
                     <tr>
                         <th>编号</th>
                         <th>姓名</th>
                         <th>性别</th>
                         <th>电话</th>
-                        <th>QQ</th>
+                        <th>入职时间</th>
+                        <th>操作</th>
                     </tr>
-                    <c:forEach items="${allMembers}" var="men">
+                    <c:forEach items="${adminList}" var="admin">
                         <tr>
-                            <td>${men.mid}</td>
-                            <td>${men.name}</td>
+                            <td>${admin.id}</td>
+                            <td>${admin.name}</td>
+                            <td>${admin.age}</td>
                             <c:choose>
-                                <c:when test="${men.sex==1}">
+                                <c:when test="${admin.sex==1}">
                                     <td>男</td>
                                 </c:when>
                                 <c:otherwise>
                                     <td>女</td>
                                 </c:otherwise>
                             </c:choose>
-                            <td>${men.phone}</td>
-                            <td>${men.age}</td>
+                            <td>${admin.phoneNumber}</td>
+                            <td>${admin.work_time}</td>
+                            <td>
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" onclick=Value('${admin.id}','${admin.name}','${admin.age}','${admin.phoneNumber}','${admin.work_time}') >修改</button>
+                            </td>
                         </tr>
                     </c:forEach>
                 </table>
@@ -58,7 +63,103 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    修改信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" >
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <input type="hidden" name="id" id="id" class="form-control input-sm">
+                        </div>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="name" class="col-md-3 control-label">姓名</label>
+                        <div class="col-md-6">
+                            <input type="number" name="name" id="name" class="form-control input-sm">
+                        </div>
+                    </div>
+                    <%--性别--%>
+                    <div class="form-group">
+                        <label for="age" class="col-md-3 control-label">年龄</label>
+                        <div class="col-md-6">
+                            <input type="text" name="age" id="age" class="form-control input-sm">
+                        </div>
+                    </div>
+
+
+
+                    <!--性别-->
+                    <div class="form-group">
+                        <label for="sex" class="col-md-3 control-label">性别</label>
+                        <div class="radio">
+                            <div class="col-md-2 col-md-offset-1">
+                                <input type="radio" name="sex" id="sex" value="1" checked >男
+                            </div>
+                            <div class="col-md-1">
+                                <input type="radio" name="sex" id="sex2"  value="2">女
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="work_time" class="col-md-3 control-label">工作时间</label>
+                        <div class="col-md-6">
+                            <input type="date" name="work_time" id="work_time" maxlength="10" class="form-control input-sm">
+                        </div>
+                    </div>
+
+                    <!--联系电话-->
+                    <div class="form-group">
+                        <label for="phoneNumber" class="col-md-3 control-label">联系电话</label>
+                        <div class="col-md-6">
+                            <input type="text" name="phoneNumber" id="phoneNumber" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userName" class="col-md-3 control-label">账号</label>
+                        <div class="col-md-6">
+                            <input type="text" name="userName" id="userName" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="col-md-3 control-label">密码</label>
+                        <div class="col-md-6">
+                            <input type="password" name="password" id="password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-5 col-md-offset-3">
+                            <button type="submit" class="btn btn-success c">提交</button>
+                            <button type="reset" class="btn btn-success">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-primary" onclick="updateInfo()">
+                    保存
+                </button>
+                <button type="button" class="btn btn-warning" onclick="deleteItem()">
+                    删除
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 
 <jsp:include page="/pages/back/footer.jsp"></jsp:include>
 <script src="assets/js/jquery-1.10.2.js"></script>
@@ -77,6 +178,86 @@
     $(function () {
         $("tr:even").css("background","#EFEFEF");
     })
+    <script>
+    $(function () {
+        $("tr:even").css("background","#EFEFEF");
+    })
+    function Value(id,name,age,phone,work_time) {
+        $('#id').val(id);
+        $('#name').val(name);
+        $('#age').val(age);
+        $('#phoneNumber').val(phone);
+        $('#work_time').val(work_time);
+    }
+    function updateInfo()
+    {
+        var xmlhttp;
+        var id = $('#id').val();
+        var name = $('#name').val();
+        var age  = $('#age').val();
+        var phone  = $('#phoneNumber').val();
+        var work_time  = $('#work_time').val();
+        var sex  = $('#sex').val();
+        var url = "";
+        if(name==""||age==""||phone==""||work_time==""||sex==""){
+            alert("填写内容不能为空");
+        }else {
+            url = "?name="+name+"&age="+age+"&phone="+phone+"&work_time="+work_time+"&sex="+sex+"&id="+id;
+        }
+
+        if (window.XMLHttpRequest)
+        {
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            // IE6, IE5 浏览器执行代码
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                alert("修改成功");
+                window.location.reload();
+            }
+        }
+
+        xmlhttp.open("GET","pages/back/admin/AdminServlet/update"+url,true);
+        xmlhttp.send();
+    }
+
+    function deleteItem() {
+        var xmlhttp;
+        var id = $('#id').val();
+        var url = "";
+
+        url = "?id="+id;
+
+        if (window.XMLHttpRequest)
+        {
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            // IE6, IE5 浏览器执行代码
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                alert("删除成功");
+                window.location.reload();
+            }
+        }
+
+        xmlhttp.open("GET","pages/back/admin/AdminServlet/delete"+url,true);
+        xmlhttp.send();
+    }
+
 </script>
 </body>
 </html>

@@ -27,52 +27,75 @@
         <div id="page-inner">
             <div class="col-md-12">
                 <div class="col-md-6 col-md-offset-4">
-                    <h1 class="h1">增加借书操作</h1>
+                    <h1 class="h1">收费操作</h1>
                 </div>
                 <div class="col-md-12">
                     <hr>
                 </div>
             </div>
             <%--编写数据增加表单--%>
-                <form action="<%=basePath%>pages/back/lenbook/LenbookServlet/insert" method="post" class="form-horizontal" id="insertForm">
+            <form action="<%=basePath%>/pages/back/bill/BillServlet/insertBill" method="post" class="form-horizontal" id="insertForm">
 
-                        <c:if test="${allBooks != null}">
-                            <%--aid--%>
-                            <div class="form-group">
-                                <label for="bookNum" class="col-md-3 control-label">图书列表</label>
-                                <div class="col-md-6">
-                                    <input  class="form-control" list="bookNum" name="bid">
-                                    <datalist id="bookNum" >
-                                       <c:forEach items="${allBooks}" var="books">
-                                           <option value="${books.bid}">${books.name}</option>
-                                       </c:forEach>
-                                    </datalist>
-                                </div>
-                            </div>
-                        </c:if>
-
-                        <c:if test="${allMembers != null}">
-                            <%--aid--%>
-                            <div class="form-group">
-                                <label for="memberNum" class="col-md-3 control-label">用户编号</label>
-                                <div class="col-md-6">
-                                    <input class="form-control" list="memberNum" name="mid">
-                                    <datalist id="memberNum" >
-                                        <c:forEach items="${allMembers}" var="member">
-                                            <option value="${member.mid}">${member.name}</option>
-                                        </c:forEach>
-                                    </datalist>
-                                </div>
-                            </div>
-                        </c:if>
+                <c:if test="${allPark_ids != null}">
 
                     <div class="form-group">
-                        <div class="col-md-5 col-md-offset-3">
-                            <button type="submit" class="btn btn-success c">提交</button>
-                            <button type="reset" class="btn btn-success">重置</button>
+                        <label for="park_id" class="col-md-3 control-label">停车场ID</label>
+                        <div class="col-md-6">
+                            <select class="form-control"id="park_id" name="park_id">
+                                <c:forEach items="${allPark_ids}" var="depot">
+                                    <option value="${depot.id}">${depot.id}</option>
+                                </c:forEach>
+                            </select>
                         </div>
                     </div>
-                </form>
+                </c:if>
+
+                <div class="form-group">
+                    <label for="in_time" class="col-md-3 control-label">入场时间</label>
+                    <div class="col-md-6">
+                        <textarea name="in_time" id="in_time" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="out_time" class="col-md-3 control-label">出场时间</label>
+                    <div class="col-md-6">
+                        <textarea name="out_time" id="out_time" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bill" class="col-md-3 control-label">费用</label>
+                    <div class="col-md-6">
+                        <textarea name="bill" id="bill" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="number" class="col-md-3 control-label">车牌</label>
+                    <div class="col-md-6">
+                        <textarea name="number" id="number" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="owner_name" class="col-md-3 control-label">车主姓名</label>
+                    <div class="col-md-6">
+                        <textarea name="owner_name" id="owner_name" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="owner_phone" class="col-md-3 control-label">车主电话</label>
+                    <div class="col-md-6">
+                        <textarea name="owner_phone" id="owner_phone" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-5 col-md-offset-3">
+                        <button type="submit" class="btn btn-success c">提交</button>
+                        <button type="reset" class="btn btn-success">重置</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>

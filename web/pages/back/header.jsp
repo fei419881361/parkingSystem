@@ -40,10 +40,10 @@
                 <a href="./index.jsp"><i class="fa fa-desktop "></i>管理员信息 <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="./member/member_insert.jsp"><i class="fa fa-toggle-on"></i>录入管理员</a>
+                        <a href="pages/back/admin/admin_insert.jsp"><i class="fa fa-toggle-on"></i>录入管理员</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" id="userlist" onclick="check()"><i class="fa fa-toggle-on"></i>管理员列表</a>
+                        <a href="pages/back/AdminServlet/getAdmin"><i class="fa fa-toggle-on"></i>管理员列表</a>
                     </li>
                 </ul>
             </li>
@@ -76,10 +76,10 @@
                 <a href="/pages/back/index.jsp"><i class="fa fa-yelp "></i>车位管理<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="pages/back/books/BooksServlet/insertPro"><i class="fa fa-coffee"></i>增加车位</a>
+                        <a href="pages/back/parkingLot/ParkingLotServlet/insertPro"><i class="fa fa-coffee"></i>增加车位</a>
                     </li>
                     <li>
-                        <a href="pages/back/books/BooksServlet/listSplit"><i class="fa fa-flash "></i>车位详情</a>
+                        <a href="pages/back/parkingLot/ParkingLotServlet/listSplit"><i class="fa fa-flash "></i>车位详情</a>
                     </li>
                 </ul>
             </li>
@@ -88,10 +88,10 @@
                 <a href="./index.jsp"><i class="fa fa-bicycle "></i>收费管理 <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="pages/back/lenbook/LenbookServlet/insertPro"><i class="fa fa-desktop "></i>收费登记 </a>
+                        <a href="pages/back/bill/BillServlet/insertPro"><i class="fa fa-desktop "></i>收费登记 </a>
                     </li>
                     <li>
-                        <a href="pages/back/lenbook/LenbookServlet/listSplit"><i class="fa fa-desktop "></i>收费详情 </a>
+                        <a href="pages/back/bill/BillServlet/listSplit"><i class="fa fa-desktop "></i>收费详情 </a>
                     </li>
                 </ul>
             </li>

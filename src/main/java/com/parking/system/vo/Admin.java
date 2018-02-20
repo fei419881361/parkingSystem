@@ -8,7 +8,7 @@ public class Admin implements Serializable {
    private String name;
    private Integer age;
    private Integer sex;
-   private Date work_time;
+   private String work_time;
    private String userName;
    private String password;
    private String phoneNumber;
@@ -19,7 +19,7 @@ public class Admin implements Serializable {
     public Admin() {
     }
 
-    public Admin(String name, Integer age, Integer sex, Date work_time, String userName, String password, String phoneNumber, Integer level, Date creatTime, Date updateTime) {
+    public Admin(String name, Integer age, Integer sex, String work_time, String userName, String password, String phoneNumber, Integer level, Date creatTime, Date updateTime) {
         this.name = name;
         this.age = age;
         this.sex = sex;
@@ -32,7 +32,7 @@ public class Admin implements Serializable {
         this.updateTime = updateTime;
     }
 
-    public Admin(Integer id, String name, Integer age, Integer sex, Date work_time, String userName, String password, String phoneNumber, Integer level, Date creatTime, Date updateTime) {
+    public Admin(Integer id, String name, Integer age, Integer sex, String work_time, String userName, String password, String phoneNumber, Integer level, Date creatTime, Date updateTime) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -95,11 +95,11 @@ public class Admin implements Serializable {
         this.sex = sex;
     }
 
-    public Date getWork_time() {
+    public String getWork_time() {
         return work_time;
     }
 
-    public void setWork_time(Date work_time) {
+    public void setWork_time(String work_time) {
         this.work_time = work_time;
     }
 

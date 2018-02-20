@@ -33,28 +33,22 @@
                 </div>
             </div>
             <%--编写数据增加表单--%>
-            <form action="<%=basePath%>pages/back/member/MemberServlet/insert" method="post" class="form-horizontal" id="insertForm">
-                <%--编号--%>
-                <div class="form-group">
-                    <label for="mid" class="col-md-3 control-label">编号</label>
-                    <div class="col-md-6">
-                        <input type="number" name="mid" id="mid" class="form-control input-sm">
-                    </div>
-                </div>
-                <%--性别--%>
+            <form action="<%=basePath%>pages/back/AdminServlet/addAdmin" method="post" class="form-horizontal" id="insertForm">
+
                 <div class="form-group">
                     <label for="name" class="col-md-3 control-label">姓名</label>
                     <div class="col-md-6">
                         <input type="text" name="name" id="name" class="form-control input-sm">
-                </div>
-                </div>
-                <%--年龄--%>
-                <div class="form-group">
-                    <label for="age" class="col-md-3 control-label">QQ号</label>
-                    <div class="col-md-6">
-                        <input type="number" name="age" id="age" maxlength="10" class="form-control input-sm">
                     </div>
                 </div>
+                <%--性别--%>
+                <div class="form-group">
+                    <label for="age" class="col-md-3 control-label">年龄</label>
+                    <div class="col-md-6">
+                        <input type="number" name="age" id="age" class="form-control input-sm">
+                </div>
+                </div>
+
 
 
                 <!--性别-->
@@ -70,11 +64,39 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <label for="work_time" class="col-md-3 control-label">工作时间</label>
+                    <div class="col-md-6">
+                        <input type="date" name="work_time" id="work_time" maxlength="10" class="form-control input-sm">
+                    </div>
+                </div>
+
                 <!--联系电话-->
                 <div class="form-group">
-                    <label for="phone" class="col-md-3 control-label">联系电话</label>
+                    <label for="phoneNumber" class="col-md-3 control-label">联系电话</label>
                     <div class="col-md-6">
-                        <input type="text" name="phone" id="phone" class="form-control">
+                        <input type="number" name="phoneNumber" id="phoneNumber" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="userName" class="col-md-3 control-label">账号</label>
+                    <div class="col-md-6">
+                        <input type="text" name="userName" id="userName" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="col-md-3 control-label">密码</label>
+                    <div class="col-md-6">
+                        <input type="password" name="password" id="password" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="level" class="col-md-3 control-label">级别</label>
+                    <div class="col-md-6">
+                        <input type="text" name="level" id="level" class="form-control">
                     </div>
                 </div>
 

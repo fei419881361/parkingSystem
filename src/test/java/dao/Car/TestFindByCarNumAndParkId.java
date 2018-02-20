@@ -1,3 +1,4 @@
+/*
 package dao.Car;
 
 import com.parking.system.dbc.DatabaseConnection;
@@ -22,3 +23,4 @@ public class TestFindByCarNumAndParkId {
         System.out.println(car.toString());
     }
 }
+*/

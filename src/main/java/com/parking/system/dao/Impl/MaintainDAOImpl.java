@@ -29,7 +29,7 @@ public class MaintainDAOImpl extends AbstractDAOImpl implements MaintainDAO {
         String sql = "insert into maintain (cost,type,maintain_time,createTime)value(?,?,?,?) ";
         pstmt = conn.prepareStatement(sql);
         pstmt.setDouble(1, vo.getCost());
-        pstmt.setInt(2, vo.getType());
+        pstmt.setString(2, vo.getType());
         pstmt.setString(3, vo.getMaintain_time());
         pstmt.setDate(4,new Date( vo.getCreateTime().getTime()));
         return pstmt.executeUpdate() > 0 ? ResponseInfo.SUCCESS : ResponseInfo.FAIL;
@@ -38,12 +38,13 @@ public class MaintainDAOImpl extends AbstractDAOImpl implements MaintainDAO {
     @Override
     public boolean doUpdate(Maintain vo) throws SQLException {
 
-        String sql = "UPDATE maintain SET type = ?,cost = ?,maintain_time = ?,updateTime = ?";
+        String sql = "UPDATE maintain SET type = ?,cost = ?,maintain_time = ?,updateTime = ? WHERE id=?";
         pstmt = super.conn.prepareStatement(sql);
-        pstmt.setInt(1, vo.getType());
+        pstmt.setString(1, vo.getType());
         pstmt.setDouble(2, vo.getCost());
         pstmt.setString(3, vo.getMaintain_time());
         pstmt.setDate(4, new Date(vo.getUpdateTime().getTime()));
+        pstmt.setInt(5,vo.getId());
 
         return pstmt.executeUpdate() > 0 ? ResponseInfo.SUCCESS : ResponseInfo.FAIL;
     }
@@ -86,7 +87,7 @@ public class MaintainDAOImpl extends AbstractDAOImpl implements MaintainDAO {
             Maintain maintain = new Maintain();
             maintain.setId(resultSet.getInt(1));
             maintain.setCost(resultSet.getDouble(2));
-            maintain.setType(resultSet.getInt(3));
+            maintain.setType(resultSet.getString(3));
             maintain.setMaintain_time(resultSet.getString(4));
             maintain.setCreateTime(resultSet.getDate(5));
             maintain.setUpdateTime(resultSet.getDate(6));

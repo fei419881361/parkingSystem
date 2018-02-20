@@ -85,23 +85,23 @@ public class MaintainServlet extends HttpServlet {
 
         if (ValidateUtils.validateEmpty(cost) && ValidateUtils.validateEmpty(type) && ValidateUtils.validateEmpty(maintainTime)) {
             Date createTime = new Date();
-            Maintain maintain = new Maintain(Double.parseDouble(cost), Integer.parseInt(type), maintainTime, createTime);
+            Maintain maintain = new Maintain(Double.parseDouble(cost), type, maintainTime, createTime);
 
             try {
                 boolean success = ServiceFactory.getIMaintainServiceInstance().Insert(maintain);
                 if (success) {
                     msg = "增加成功";
-                    url = "/pages/back/maintain/maintain_list.jsp";
+                    url = "/pages/back/maintain/MaintainServlet/maintainInfo";
                 } else {
                     msg = "增加失败";
-                    url = "/pages/back/maintain/maintain_insert.jsp";
+                    url = "/pages/back/maintain/MaintainServlet/maintainInfo";
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         } else {
             msg = "输入不能为空";
-            url = "/pages/back/maintain/maintain_insert.jsp";
+            url = "/pages/back/maintain/MaintainServlet/maintainInfo";
         }
         request.setAttribute("msg", msg);
         request.setAttribute("url", url);
@@ -135,6 +135,7 @@ public class MaintainServlet extends HttpServlet {
         String url = "";
         String msg = "";
 
+        String id = request.getParameter("id");
         String cost = request.getParameter("cost");
         String type = request.getParameter("type");
         String maintainTime = request.getParameter("maintain_time");
@@ -143,18 +144,19 @@ public class MaintainServlet extends HttpServlet {
             Date updateTime = new Date();
             Maintain maintain = new Maintain();
             maintain.setCost(Double.parseDouble(cost));
-            maintain.setType(Integer.parseInt(type));
+            maintain.setType(type);
             maintain.setMaintain_time(maintainTime);
             maintain.setUpdateTime(new Date());
+            maintain.setId(Integer.parseInt(id));
 
             try {
                 boolean success = ServiceFactory.getIMaintainServiceInstance().Update(maintain);
                 if (success) {
                     msg = "更新成功";
-                    url = "/pages/back/maintain/maintain_list.jsp";
+                    url = "/pages/back/maintain/MaintainServlet/maintainInfo";
                 } else {
                     msg = "更新失败";
-                    url = "/pages/back/maintain/maintain_list.jsp";
+                    url = "/pages/back/maintain/MaintainServlet/maintainInfo";
                 }
 
             } catch (SQLException e) {
@@ -162,7 +164,7 @@ public class MaintainServlet extends HttpServlet {
             }
         } else {
             msg = "没有新的更改";
-            url = "/pages/back/maintain/maintain_list.jsp";
+            url = "/pages/back/maintain/MaintainServlet/maintainInfo";
         }
         request.setAttribute("msg", msg);
         request.setAttribute("url", url);
